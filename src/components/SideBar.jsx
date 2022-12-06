@@ -46,7 +46,21 @@ function SideBar() {
       <li className="nav-item">
         <Link className="nav-link collapsed" to="/products">
           {/* <i className="fas fa-fw fa-search"></i> */}
+          <span>Tabla de productos</span>
+        </Link>
+      </li>
+      
+      <li className="nav-item">
+        <Link className="nav-link collapsed" to="/list">
+          {/* <i className="fas fa-fw fa-search"></i> */}
           <span>Todos los productos</span>
+        </Link>
+      </li>
+      
+      <li className="nav-item">
+        <Link className="nav-link collapsed" to="/create">
+          {/* <i className="fas fa-fw fa-search"></i> */}
+          <span>Crear producto</span>
         </Link>
       </li>
 

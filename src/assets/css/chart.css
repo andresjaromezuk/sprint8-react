@@ -1,0 +1,10 @@
+.deleteProduct{
+    text-align: center;
+    background-color: orangered;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+    border: none;
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import ChartRow from './ChartRow';
+import '../assets/css/chart.css'
 
 function Chart (){
 
@@ -60,6 +61,7 @@ function Chart (){
                                 <th>Cantidad de cuotas</th>
                                 <th>Categoría</th>
                                 <th>Detalle</th>
+                                <th>Eliminar</th>
                             </tr>
                         </thead>
                         <tbody>

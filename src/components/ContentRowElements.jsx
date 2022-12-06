@@ -12,10 +12,11 @@ function ContentRowElements() {
   
   useEffect(() => {
   
-      fetch (`https://arrayces-sprint-7.herokuapp.com/api/products`)
+      fetch (`http://localhost:3000/api/products`)
       .then(res=> res.json())
       .then(data => {setProducts(data.meta.length)
-                    setCategories(data.meta.categoriesLength)})
+                    setCategories(data.meta.categoriesLength)
+                    console.log(data)})
     }, [])
   
     useEffect(() => {

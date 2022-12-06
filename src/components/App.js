@@ -8,6 +8,9 @@ import NotFound from "./NotFound";
 import LastProductInDb from "./LastProductInDb";
 import Statistics from "./Statictics";
 import SearchProduct from "./SearchProduct";
+import showAllProducts from "./showAllProducts";
+import CreateProduct from "./CreateProduct";
+import EditProduct from "./EditProduct"
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
           <Route path="/products" component={Chart} />
           <Route path="/lastProduct" component={LastProductInDb} />
           <Route path="/statistics" component={Statistics} />
+          <Route path="/list" component={showAllProducts} />
+          <Route path="/create" component={CreateProduct} />
+          <Route path="/edit" component={EditProduct} />
           <Route component={NotFound} />
         </Switch>
       </EmptyWrapper>
