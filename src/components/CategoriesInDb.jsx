@@ -5,7 +5,7 @@ function CategoriesInDb() {
 
     useEffect(() => {
 
-        fetch (`https://grupo8-arrayces-sprint8.herokuapp.com/api/products`)
+        fetch (`https://arrayces-railway-sprint7-production.up.railway.app/api/products`)
         .then(res=> res.json())
         .then(info => setCategories(info.meta))
       }, [])

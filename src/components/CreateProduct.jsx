@@ -35,7 +35,7 @@ export default function CreateProduct(){
     useEffect( ()=> {
         
         async function  fetchData(){
-            let infoJson= await fetch('http://localhost:3000/api/products/list') 
+            let infoJson= await fetch('https://arrayces-railway-sprint7-production.up.railway.app/api/products/list') 
             let info =  await infoJson.json()
             
             console.log(infoJson)

@@ -12,7 +12,7 @@ function Chart (){
     const [keyword2, setKeyword2] = useState("")
 
     useEffect(() => {
-        fetch (`https://arrayces-sprint-7.herokuapp.com/api/products/filter?keyword1=${keyword1}&&keyword2=${keyword2}`)
+        fetch (`https://arrayces-railway-sprint7-production.up.railway.app/api/products/filter?keyword1=${keyword1}&&keyword2=${keyword2}`)
         .then(res=> res.json())
         .then(info => {setProducts(info.data)})
         }, [keyword1, keyword2]);

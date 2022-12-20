@@ -56,7 +56,7 @@ export default function EditProduct(props){
     useEffect( ()=> {
         
         async function  fetchData(){
-            let infoJson= await fetch('http://localhost:3000/api/products/list') 
+            let infoJson= await fetch('https://arrayces-railway-sprint7-production.up.railway.app/api/products/list') 
             let info =  await infoJson.json()
             
             console.log(infoJson)
@@ -84,7 +84,7 @@ export default function EditProduct(props){
 
             console.log(values)
     
-            fetch('http://localhost:3000/api/products/edit', {
+            fetch('https://arrayces-railway-sprint7-production.up.railway.app/api/products/edit', {
                 method: 'PUT', 
                 headers: {
                   'Content-Type': 'application/json',

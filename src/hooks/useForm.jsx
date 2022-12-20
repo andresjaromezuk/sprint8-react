@@ -79,7 +79,7 @@ const useForm = () => {
     useEffect(() =>{
         if(Object.keys(totalErrors).length === 0 && isSubmitting ){
     
-            fetch('http://localhost:3000/api/products/', {
+            fetch('https://arrayces-railway-sprint7-production.up.railway.app/api/products/', {
                 method: 'POST', 
                 headers: {
                   'Content-Type': 'application/json',

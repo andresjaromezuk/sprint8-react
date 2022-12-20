@@ -6,7 +6,7 @@ function LastProductInDb() {
 
     useEffect(() => {
 
-        fetch (`https://arrayces-sprint-7.herokuapp.com/api/products/lastProduct`)
+        fetch (`https://arrayces-railway-sprint7-production.up.railway.app/api/products/lastProduct`)
         .then(res=> res.json())
         .then(info => setLastProduct(info.data))
       }, [])

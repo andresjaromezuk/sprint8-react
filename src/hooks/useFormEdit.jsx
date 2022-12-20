@@ -20,7 +20,7 @@ const useFormEdit = (productCreateValidation, id, product) => {
 
             console.log(values)
     
-            fetch('http://localhost:3000/api/products/edit', {
+            fetch('https://arrayces-railway-sprint7-production.up.railway.app/api/products/edit', {
                 method: 'PUT', 
                 headers: {
                   'Content-Type': 'application/json',

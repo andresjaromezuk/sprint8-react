@@ -12,7 +12,7 @@ function ContentRowElements() {
   
   useEffect(() => {
   
-      fetch (`http://localhost:3000/api/products`)
+      fetch (`https://arrayces-railway-sprint7-production.up.railway.app/api/products`)
       .then(res=> res.json())
       .then(data => {setProducts(data.meta.length)
                     setCategories(data.meta.categoriesLength)
@@ -21,7 +21,7 @@ function ContentRowElements() {
   
     useEffect(() => {
   
-      fetch (`https://arrayces-sprint-7.herokuapp.com/api/users`)
+      fetch (`https://arrayces-railway-sprint7-production.up.railway.app/api/users`)
       .then(res=> res.json())
       .then(data => setUsers(data.meta.length))
     }, [])

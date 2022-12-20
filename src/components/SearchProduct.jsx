@@ -9,7 +9,7 @@ function SearchProduct() {
 
   useEffect(() => {
     /* let getProduct = () =>{ */
-      fetch (`https://arrayces-sprint-7.herokuapp.com/api/products/search?keyword=${keyword}`)
+      fetch (`https://arrayces-railway-sprint7-production.up.railway.app/api/products/search?keyword=${keyword}`)
       .then(res=> res.json())
       .then(products => setProducts(products.data))
     /* }

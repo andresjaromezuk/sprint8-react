@@ -10,7 +10,7 @@ function ShowAllProducts() {
   const pageNumber = useRef()
 
   useEffect(() => {
-      fetch (`http://localhost:3000/api/products/list?page=${page}`)
+      fetch (`https://arrayces-railway-sprint7-production.up.railway.app/api/products/list?page=${page}`)
       .then(res=> res.json())
       .then(element => setData(element.data))
       

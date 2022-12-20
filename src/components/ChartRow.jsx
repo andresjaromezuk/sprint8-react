@@ -15,7 +15,7 @@ function ChartRow(props) {
 
   useEffect(()=>{
     if(idToDelete){
-      fetch(`http://localhost:3000/api/products/delete/${idToDelete}`, {method: 'DELETE'})
+      fetch(`https://arrayces-railway-sprint7-production.up.railway.app/api/products/delete/${idToDelete}`, {method: 'DELETE'})
       .then(res =>{
         if(res.status === 200){
           window.location.reload()
